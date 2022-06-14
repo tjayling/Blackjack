@@ -15,16 +15,35 @@
     </header>
     <section>
       <article>
-        <ul id="cards-list"></ul>
-        <div id="total-container"><p></p></div>
+        <div id="other-buttons-container">
+          <button id="draw-button">Draw</button>
+          <button id="fold-button">Fold</button>
+          <button id="reset-button">Reset</button>
+        </div>
+        <div id="players-container">
+          <div id="player1-container" class="player-container">
+            <div id="player1-name-container" class="playerNames"><h2></h2></div>
+            <div id="player1-total-container" class="total-container"><p></p></div>
+            <ul id="player1-cards-list"></ul>
+          </div>
+
+          <div id="player2-container" class="player-container">
+            <div id="player2-name-container" class="playerNames"><h2></h2></div>
+            <div id="player2-total-container" class="total-container"><p></p></div>
+            <ul id="player2-cards-list"></ul>
+            
+          </div>
+        </div>
+        <div id="input-container">
+          <input
+            type="text"
+            id="name-input"
+            placeholder="enter your name..."
+          />
+        </div>
         <div id="button-container">
           <div id="start-button-container">
             <button id="start-button">Start</button>
-          </div>
-          <div id="other-buttons-container">
-            <button id="draw-button">Draw</button>
-            <button id="fold-button">Fold</button>
-            <button id="reset-button">Reset</button>
           </div>
         </div>
       </article>
@@ -35,6 +54,8 @@
         <p></p>
       </article>
     </section>
+    <script src="./card.js"></script>
+    <script src="./player.js"></script>
     <script src="./blackjack.js"></script>
   </body>
 </html>

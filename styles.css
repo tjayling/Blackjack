@@ -1,3 +1,38 @@
+#start-button-container {
+  display: none;
+}
+
 #other-buttons-container {
-    display: none;
+  display: none;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+#players-container {
+  display: flex;
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.player-container {
+  margin: 10px;
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.total-container {
+  padding: 10px;
 }
